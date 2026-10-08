@@ -1,0 +1,43 @@
+table{
+  border-with: 1px;
+  border-style: solid;
+  border-color: black;
+  border-collapse: collapse;
+}
+
+td, th{
+  border: 1px, solid, black;
+}
+
+.bd{
+  background-color: pink;
+}
+
+.it{
+  background-color: lightblue;
+}
+
+.cont{
+  background-color: orange;
+}
+
+.si{
+  background-color: aqua;
+}
+
+.prog{
+  background-color: limegreen;
+}
+
+.lima{
+    background-color: brown;
+
+}
+
+.ing{
+  background-color: purple;
+}
+
+.sust{
+  background-color: blue;
+}
