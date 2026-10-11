@@ -1,0 +1,22 @@
+*{
+    color: red;
+    background-color: gainsboro;
+}
+
+h1{
+    text-align: center;
+}
+
+hr{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+h2{
+    text-align: right;
+}
+
+.izquierda{
+    text-align: left;
+}
