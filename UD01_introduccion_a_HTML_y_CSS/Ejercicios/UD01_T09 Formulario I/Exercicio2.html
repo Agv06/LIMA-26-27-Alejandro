@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario de rexistro</title>
+        <meta name="author" content="Alejandro"/>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Formulario I"/>
+        <meta name="keywords" content="Formulario"/>
+    </head>
+    <body>
+        <form method="get" action="">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="usuario_nome" size="50"/>
+            <br/>
+            <br/>
+            <label for="apelidos">Apelidos:</label>
+            <input type="text" id="apelidos" name="usuario_apelidos" size="50"/>
+            <br/>
+            <br/>
+            <p>Sexo:</p>
+            <input type="radio" id="home" value="home" name="sexo"/>Home
+            <input type="radio" id="muller" value="muller" name="sexo"/>Muller
+            <br/>
+            <br/>
+            <label for="mail">Correo electrónico:</label>
+            <input type="email" id="mail" name="usuario_mail"/>
+            <br/>
+            <br/>
+            <label for="informacion">Desexo recibir información sobre novidades  e ofertas</label>
+            <input type="checkbox" id="informacion" name="informacion" checked="checked"/>
+            <br/>
+            <br/>
+            <label for="condicions">Declaro aceptar as condicións xerais do programa e a normativa sobre protección de datos</label>
+            <input type="checkbox" id="condicions" name="condicions"/>
+            <br/>
+            <br/>
+            <button type="submit">Enviar</button>
+            <br/>
+            <br/>
+            <p>Poboación:</p>
+            <select name="poboacion">
+                <option>A Coruña</option>
+                <option>Lugo</option>
+                <option>Ourense</option>
+                <option>Pontevedra</option>
+            </select>
+            <br/>
+            <br/>
+            <label for="descrición">Descrición:</label>
+            <textarea id="descrición" name="usuario_descrición" rows="5" cols="10"></textarea>
+        </form>
+    </body>
+</html>
