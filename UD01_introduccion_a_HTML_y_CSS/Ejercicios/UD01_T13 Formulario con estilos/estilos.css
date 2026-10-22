@@ -1,0 +1,25 @@
+input:required:valid{
+    background-color: green;
+    border-width: 1px;
+    border-style: solid;
+    border-color: green;
+}
+
+input:required:invalid{
+    background-color: red;
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
+}
+
+input:valid{
+    border-width: 1px;
+    border-style: solid;
+    border-color: green;
+}
+
+input:invalid{
+    border-width: 1px;
+    border-style: solid;
+    border-color: red;
+}
