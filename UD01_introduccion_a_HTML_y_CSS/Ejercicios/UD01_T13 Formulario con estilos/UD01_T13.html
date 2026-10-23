@@ -11,11 +11,11 @@
     <body>
         <form method="get" action="#">
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" minlength="3" maxlength="30" required/>
+            <input type="text" id="nome" name="nome" minlength="3" maxlength="30" pattern="[A-ZÁÉÍÓÚ]{1}[a-zA-Z/áéíóúñÁÉÍÓÚÑ \-]{2,19}" required/>
             <br/>
             <br/>
             <label for="apelidos">Apelidos:</label>
-            <input type="text" id="apelidos" name="apelidos" minlength="3" maxlength="50" required/>
+            <input type="text" id="apelidos" name="apelidos" minlength="3" maxlength="50" pattern="[A-ZÁÉÍÓÚ]{1}[a-zA-Z/áéíóúñÁÉÍÓÚÑ\s-]{2,49}" required/>
             <br/>
             <br/>
             <label for="correo">Correo electrónico:</label>
