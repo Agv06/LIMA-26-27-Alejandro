@@ -1,0 +1,53 @@
+input{
+    background-color: lightgray;
+    border: 0;
+    margin: 9px;
+    margin-left: 0;
+}
+
+textarea{
+    background-color: lightgray;
+    border: 0;
+    margin: 3px;
+    margin-left: 0;
+}
+
+input:valid, textarea:valid{
+    background-color: lightgreen;
+    color: darkgreen;
+}
+
+input:required:valid{
+    background-color: lightgreen;
+    color: darkgreen;
+}
+
+input:invalid, textarea:invalid{
+    background-color: lightcoral;
+    color: darkred;
+}
+
+input:required:invalid{
+    background-color: lightcoral;
+    color: darkred;
+}
+
+input:required{
+    background-color: lightblue;
+}
+
+input:focus{
+    border: 10px solid blue;
+    color: darkblue;
+}
+
+fieldset{
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+button{
+    background-color: lightgray;
+    border: 0;
+}

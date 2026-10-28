@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UD01_T18</title>
+        <meta name="author" content="Alejandro"/>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Formulario estilizado II"/>
+        <meta name="keywords" content="Formulario estilizado"/>
+        <link href="estilos.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <h1>Inscripción a un taller tecnológico</h1>
+        <form method="post" action="#">
+            <fieldset>
+                <legend>1. Datos personales</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" minlength="3" maxlength="40" placeholder="Tu nombre" required/>
+                <br/>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" minlength="3" maxlength="60" placeholder="Tus apellidos" required/>
+                <br/>
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" minlength="8" maxlength="20" pattern="[a-zA-Z0-9]{8}[a-zA-Z0-9]{9,20}" placeholder="8-20 caracteres" required/>
+                <br/>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="nombre@ejemplo.com" required/>
+                <br/>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" minlength="9" maxlength="9" placeholder="123456789"/>
+                <br/>
+                <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" min="1950-01-01" max="2010-12-31" placeholder="dd/mm/aaaa" required/>
+                <br/>
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" min="14" max="100" placeholder="Edad en" required/>
+                <br/>
+                <label for="buscar_taller">Buscar un taller:</label>
+                <input type="search" id="buscar_taller" name="buscar_taller" placeholder="Ej. programación"/>
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend>2. Inscripción</legend>
+                <label for="fecha_inscripcion">Fecha y hora de inscripción:</label>
+                <input type="datetime-local" id="fecha_inscripcion" name="fecha_inscripcion" min="2026-01-01" max="2027-12-31" required/>
+                <br/>
+                <label for="mes_preferido">Mes preferido:</label>
+                <input type="month" id="mes_preferido"  name="mes_preferido"  min="2027-01" max="2027-12"/>
+                <br/>
+                <label for="semana_preferida">Semana preferida:</label>
+                <input type="week" id="semana_preferida" name="semana_preferida" min="2027-W01" max="2027-W52"/>
+                <br/>
+                <label for="hora_preferida">Hora preferida:</label>
+                <input type="time" id="hora_preferida" name="hora_preferida" min="09:00" max="20:00" required/>
+                <br/>
+                <label for="modalidad">Modalidad de asistencia:</label>
+                <br/>
+                <input type="radio" id="presencial" name="modalidad" value="presencial" required/>Presencial
+                <input type="radio" id="online" name="modalidad" value="online" required/>Online
+                <br/>
+                <label for="talleres_interes">Talleres de interés:</label>
+                <br/>
+                <input type="checkbox" id="programacion" name="talleres_interes" value="programacion"/>Programación
+                <input type="checkbox" id="redes" name="talleres_interes" value="redes"/>Redes
+                <input type="checkbox" id="diseno_web" name="talleres_interes" value="diseno_web"/>Diseño web
+                <br/>
+                <label for="numero_sesiones">Número de sesiones:</label>
+                <input type="range" id="numero_sesiones" name="numero_sesiones" min="1" max="10"/>
+                <br/>
+                <label for="documento_identificativo">Documento identificativo (PDF):</label>
+                <input type="file" id="documento_identificativo" name="documento_identificativo" accept="application/pdf"/>
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend>3. Información adicional</legend>
+                <label for="pagina_personal">Página web personal:</label>
+                <input type="url" id="pagina_personal" name="pagina_personal" placeholder="https://ejemplo.com"/>
+                <br/>
+                <label for="codigo_invitacion">Código de invitación:</label>
+                <input type="text" id="codigo_invitacion" name="codigo_invitacion" minlength="4" maxlength="8" pattern="[a-zA-Z0-9]" placeholder="Ej. AB12"/>
+                <br/>
+                <label for="color_preferido">Color preferido:</label>
+                <input type="color" id="color_preferido" name="color_preferido"/>
+                <br/>
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios" maxlength="300" placeholder="Escribe tus comentarios"></textarea>
+            </fieldset>
+            <br/>
+            <button type="button">Consultar disponibilidad</button>
+            <button type="submit">Enviar inscripción</button>
+            <button type="reset">Restablecer</button>
+        </form>
+    </body>
+</html>
