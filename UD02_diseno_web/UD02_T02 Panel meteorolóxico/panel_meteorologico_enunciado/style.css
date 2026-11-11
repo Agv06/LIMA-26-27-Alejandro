@@ -1,0 +1,138 @@
+:root {
+    --violeta-oscuro: rgb(54, 43, 91);
+    --gris: rgb(112, 119, 135);
+    --violeta-claro: rgb(195, 177, 235);
+    --borde: 2px solid rgba(145, 124, 190, 0.45);
+}
+
+body {
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #7775c9 0%, #bd83c2 48%, #75a9d4 100%);
+    color: var(--violeta-oscuro);
+}
+
+article {
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 10px;
+    border: 1px solid var(--gris);
+    width: 710px;
+    background-color: rgba(211, 211, 211, 0.7);
+}
+
+header {
+    border-bottom: var(--borde);
+    padding-bottom: 3%;
+    text-align: right;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+h1 {
+    margin-bottom: 0.1em;
+}
+
+.fecha {
+    color: var(--gris);
+}
+
+.tiempo-actual {
+    margin-left: 9%;
+}
+
+.temperatura {
+    display: inline-block;
+    width: 50%;
+}
+
+.valor {
+    font-size: 8em;
+    font-weight: bold;
+    margin-top: 15%;
+    margin-bottom: 0%;
+}
+
+.estado {
+
+}
+
+.imagen-tiempo {
+    display: inline-block;
+    width: 45%;
+}
+
+.imagen-tiempo img {
+
+}
+
+.detalles {
+    font-size: 0.9em;
+    color: var(--gris);
+}
+
+.detalles p {
+
+}
+
+.detalles strong {
+    color: var(--violeta-oscuro);
+}
+
+.prevision {
+    margin-left: 3%;
+    margin-right: 3%;
+    display: block;
+}
+
+.prevision h2 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    border-bottom: var(--borde);
+}
+
+.capsula{
+    font-size: 0.8em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th {
+    color: var(--violeta-claro);
+    background-color: var(--violeta-oscuro);
+}
+
+td{
+    
+}
+
+td:not(:last-child), th:not(:last-child) {
+    border-right: var(--borde);
+}
+
+.iconos img {
+    width: 2.5em;
+    padding-left: 1.63em;
+    padding-right: 1.63em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.maximas {
+    padding-left: 1.63em;
+    padding-right: 1.63em;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.minimas {
+    padding-left: 1.63em;
+    padding-right: 1.63em;
+    color: var(--gris);
+    font-size: 0.9em;
+}
